@@ -80,6 +80,7 @@ body > h6:first-child {
 }
 
 /* Vertical margins (-webkit-any for specificity) */
+/*
 p,
 ol,
 ul,
@@ -88,8 +89,9 @@ figure,
 blockquote,
 pre,
 table {
-  margin: calc((29 / 16) * 1em)  auto 0;
+  margin: calc((29 / 16) * 1em)  auto 0; 
 }
+*/ /* 删除了这里,因为它会打乱引用的东西,事实上最大影响对象是p和blockquote - SLboat */
 
 /* Override vertical margin between headers and block-level elements */
 :-webkit-any(h3, h4, h5) + :-webkit-any(p, ol, ul, dl, figure, blockquote, pre, table),
