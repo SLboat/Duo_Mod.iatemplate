@@ -1,0 +1,43 @@
+
+@supports (font-variation-settings: normal) {
+
+  @font-face {
+    font-family: "iAWriterFullSpaceJA";
+    font-weight: 400 700;
+    font-style: normal;
+    src: local("iA Writer Full Space JA"), url("iAWriterFullSpaceJA.ttf");
+  }
+
+}
+
+@supports not (font-variation-settings: normal) {
+
+  @font-face {
+    font-family: "iAWriterFullSpaceJA";
+    font-weight: 400;
+    font-style: normal;
+    src: local("iAWriterFullSpaceJA-Regular"), local("iA Writer Full Space JA Regular"), url("iAWriterFullSpaceJA-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "iAWriterFullSpaceJA";
+    font-weight: 450;
+    font-style: normal;
+    src: local("iAWriterFullSpaceJA-Text"), local("iA Writer Full Space JA Text"), url("iAWriterFullSpaceJA-Text.ttf");
+  }
+
+  @font-face {
+    font-family: "iAWriterFullSpaceJA";
+    font-weight: 600;
+    font-style: normal;
+    src: local("iAWriterFullSpaceJA-Semibold"), local("iA Writer Full Space JA Semibold"), url("iAWriterFullSpaceJA-Semibold.ttf");
+  }
+
+  @font-face {
+    font-family: "iAWriterFullSpaceJA";
+    font-weight: 700;
+    font-style: normal;
+    src: local("iAWriterFullSpaceJA-Bold"), local("iA Writer Full Space JA Bold"), url("iAWriterFullSpaceJA-Bold.ttf");
+  }
+
+}
